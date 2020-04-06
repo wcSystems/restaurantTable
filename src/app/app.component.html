@@ -1,0 +1,10 @@
+<div *ngIf="!isEntrada" class="container" style="background-color: #6d6d6d">
+  <div class="row">
+      <app-puesto class="col-md-6 main-container" style="transform: rotate(180deg); transform-origin: 50% 54%;"></app-puesto>
+      <app-puesto class="col-md-6 main-container" style="transform: rotate(180deg); transform-origin: 50% 54%;"></app-puesto>
+      <div class="col-12" style="margin:1% 0"></div>
+      <app-puesto class="col-md-6 main-container"></app-puesto>
+      <app-puesto class="col-md-6 main-container"></app-puesto>
+  </div>
+</div>
+<app-entrada  *ngIf="isEntrada" (click)="entrar()"></app-entrada>

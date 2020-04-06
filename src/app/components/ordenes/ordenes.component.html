@@ -1,0 +1,36 @@
+<drag-scroll>
+  <ul *ngFor="let orden of ordenes; let i = index">
+    <ng-container>
+      <li>
+        <div class=" rsvp">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <div class="restaurant-title">
+                  <img src="{{ orden.img }}" alt="" class="circle" />
+                  <h2>{{ orden.name }}</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <section class="seating-info">
+                  <h4>Platos</h4>
+                  <span (click)="minus(i)" id="minus">&#45;</span>
+                  <input
+                    type="text"
+                    name="quantity"
+                    value="{{ orden.cantidad }}"
+                    id="guestVal"
+                  />
+                  <span (click)="plus(i)" id="plus">&#43;</span>
+                </section>
+                <button (click)="procesar(orden)" class="btn confirm">
+                  Procesar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ng-container>
+  </ul>
+</drag-scroll>

@@ -1,0 +1,100 @@
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+drag-scroll {
+  height: 366px;
+  width: 520px;
+  margin: 4%;
+}
+li{
+  list-style:none;
+}
+.container {
+  background-color: #37424A;
+}
+.rsvp {
+  background-color: rgba(255,255,255,.5);
+  padding-top: 3em;
+  position: relative;
+}
+
+input{
+  background: none;
+}
+
+span.return {
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  color: #999;
+  top: 30px;
+  left: 40px;
+  font-family: serif;
+  
+
+}
+/* title of restaurant */
+.restaurant-title {
+  margin-bottom: 20px;
+}
+
+img.circle {
+  border: 6px solid #37424A;
+   box-shadow: 1px 3px 10px 1px #666;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.restaurant-title h2 {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+.restaurant-title h2 span {
+  font-size: .95rem;
+  overflow: hidden;
+  white-space: initial;
+}
+
+/* seating info */
+.seating-info h4 {
+  font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+  color: #000;
+  font-size: 1.15rem;
+  position: relative;
+}
+
+#minus, #plus{
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.seating-info input {
+  border: none;
+  text-align: center;
+  font-size: 4.5rem;
+  width: 40%;
+  color: #555;
+  font-weight: bold;
+  
+ 
+}
+
+
+.btn {
+  min-width: 40%;
+  padding: 8px 15px;
+  height: 60px;
+  margin-bottom: 40px;
+  box-shadow: 1px 3px 6px 1px #666;
+  color: #D9A859;
+  background-color: #000;
+}
+.btn:hover {
+  background-color: rgba(255,255,255,.5);
+  background-color: #37424A;
+}

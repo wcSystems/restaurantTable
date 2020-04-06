@@ -1,0 +1,18 @@
+ <div>
+   <drag-scroll>
+     <ul>
+       <ng-container *ngFor="let prueba of platos; let i=index">
+         <li>
+           <div (click)="menuMostrarInf(i)" drag-scroll-y-disabled="true" drag-scroll-item
+             [ngClass]="{'show-description': this.did==i}">
+             <img src="{{prueba.image}}" />
+
+             <p>{{prueba.name}} <span class="price">{{prueba.price}}$</span><br />
+               <small>{{prueba.description}}.</small></p>
+
+           </div>
+         </li>
+       </ng-container>
+     </ul>
+   </drag-scroll>
+ </div>

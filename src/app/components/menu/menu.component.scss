@@ -1,0 +1,80 @@
+body {
+  //background-color: #000;
+  margin: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  display: flex;
+  //background: #000;
+
+  .slide {
+    height: 44vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 0px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    //flex-grow:1;
+    // transition:flex-grow 0.8s ease, opacity 0.5s ease;
+    transition: width 0.8s ease, opacity 0.5s ease;
+  }
+}
+
+.vista {
+  // flex-grow:10;
+  width: 200% !important;
+  opacity: 1 !important;
+}
+
+.neon {
+  font-family: Exo;
+  font-size: 25px;
+  //color: #383333;
+  margin-top: 79%;
+  align-content: center;
+  justify-content: center;
+  margin-left: 44%;
+  /*text-shadow:
+  0 0 5px rgb(231, 26, 88),
+  0 0 10px rgb(231, 26, 88),
+  0 0 20px rgb(231, 26, 88),
+  0 0 40px rgb(243, 1, 14),
+  0 0 80px rgb(243, 1, 14),
+  0 0 90px rgb(243, 1, 14),
+  0 0 100px rgb(243, 1, 14),
+  0 0 140px rgb(243, 1, 14),
+  0 0 180px rgb(243, 1, 14);*/
+}
+
+.mybtn {
+  //height: 100%;
+  margin: 79%;
+  width: 60px;
+  color: rgb(246, 16, 16);
+  border-color: transparent;
+  //text-shadow: 0px 0px 2px;
+  background-color: rgb(12, 11, 11);
+  opacity: .9;
+}
+
+
+.mybtn:hover {
+  opacity: .9;
+  background-color: rgb(12, 11, 11);
+  border-color: transparent;
+}
+
+.mybtn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+
+}

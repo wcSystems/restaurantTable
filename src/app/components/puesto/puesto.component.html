@@ -1,0 +1,29 @@
+<div class="row mesa-bg backer">
+  <div class="col-md-2">
+    <app-slide (back)="back()" (OisOrdenes)="ordenes($event)" [resregresar]="this.resregresar"
+      (showMenuCategoria)="execute($event)">
+    </app-slide>
+  </div>
+  <div class="col-md-10">
+    <div *ngIf="isMenuCategoria && !this.idCategoria ">
+      <app-menu (regresar)="this.resregresar = $event" (valor)="valor($event)">
+      </app-menu>
+    </div>
+    <div>
+      <app-menu-list *ngIf="this.idCategoria" [idCategory]="this.idCategoria">
+      </app-menu-list>
+    </div>
+    <div *ngIf="OisOrdenes">
+      <app-ordenes></app-ordenes>
+    </div>
+    <div *ngIf="!isWelcome">
+      <app-esquinero [isWelcome]="isWelcome" (OisWelcome)="login($event)"></app-esquinero>
+    </div>
+  </div>
+</div>
+<div class="mascarade" (click)="showMenu()" *ngIf="isWelcome">
+  <span class="reloj">{{ fecha }} {{ hora }}:{{ minutos }}:{{ segundos }} {{ ampm }}
+  </span>
+  <span class="puesto">B3</span>
+  <span class="mensaje">Bienvenido</span>
+</div>

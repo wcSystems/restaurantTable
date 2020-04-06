@@ -1,0 +1,120 @@
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #232323;
+}
+
+div {
+
+  height: 383px;
+  background-size: cover;
+  position: relative;
+  margin: 0px 0 0 0;
+  border-radius: 12px;
+  display: block !important;
+}
+
+p {
+  width: 100%;
+  color: rgba(256, 256, 256, 1);
+  background-color: black;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+  //padding: 5px;
+  text-align: justify;
+  line-height: 18px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 30px;
+  overflow: hidden;
+  white-space: initial;
+}
+
+small {
+  opacity: 0;
+}
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 75px;
+  text-align: center;
+  margin: 60px 0 0 0;
+  color: #aaaaaa;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 70px 0;
+  color: #bbbbbb;
+}
+
+
+.first {
+  background: url("http://dash.ga.co/assets/firstcourse.jpg");
+}
+
+.second {
+  background: url("http://dash.ga.co/assets/secondcourse.jpg");
+}
+
+.dessert {
+  background: url("http://dash.ga.co/assets/dessertcourse.jpg");
+}
+
+.price {
+  float: none;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+
+  /* div {
+    margin: 20px 12px 0 12px;
+  } */
+
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  small {
+    font-size: 12px;
+  }
+}
+
+drag-scroll {
+  height: 100%;
+  width: 90%;
+  margin: 2% 1% 0% 0%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.show-description p {
+  height: 100px;
+}
+
+.show-description small {
+  opacity: 1;
+}

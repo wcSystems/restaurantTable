@@ -1,0 +1,11 @@
+<div class="slider">
+  <ng-container *ngFor="let img of categorias; let i=index">
+    <div class="slide" (click)="this.indexclick=i" [ngClass]="{'vista': this.indexclick==i}"
+      [ngStyle]="{'background-image': 'url(' + img.image + ')' }">
+      <app-titulo *ngIf="this.indexclick==i" [title]="img.name"> </app-titulo>
+      <button (click)="goList(img.id)" class="btn btn-outline-dark btn-block mybtn bounce" ejemplo="index">
+        <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </ng-container>
+</div>

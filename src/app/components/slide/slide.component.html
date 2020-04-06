@@ -1,0 +1,23 @@
+<div class="helper-container row">
+  <div class="col-md-12 center no-padding">
+    <button class="btn btn-outline-primary btn-block mybutton" [ngClass]="claseNotificar" (click)="cambiaAlert()">
+      <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="col-md-12 center no-padding">
+    <button [ngClass]="claseMenu" (click)="menuCategoriaMostrar();this.isOrdenes = false" class="btn btn-outline-primary btn-block mybutton">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="col-md-12 center no-padding">
+    <button (click)="ordenes();this.isMenuCategoria = false" class="btn btn-outline-primary btn-block mybutton">
+      <i class="fa fa-list-alt fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div *ngIf="this.resregresar" class="col-md-12 center no-padding">
+    <button (click)="backbtn()" class="btn btn-outline-primary btn-block mybutton alertAct bounce">
+      <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+
+</div>
