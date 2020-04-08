@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "git":"git add . && git commit -m 'data' && git push && ng build --prod --base-href https://wcsystems.github.io/restaurantTable/ && ngh --dir=dist/browser",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
